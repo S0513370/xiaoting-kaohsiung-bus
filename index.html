@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小庭高雄公車查詢系統</title>
+    <link rel="stylesheet" href="style.css">
+
+   <style>
+    /* 整個網頁 */
+    body {
+        margin: 0;
+        font-family: "Microsoft JhengHei", sans-serif;
+    }
+
+    /* 藍色標題列 */
+    .header {
+        height: 120px;
+        background-color: blue;
+        color: white;
+        padding-left: 40px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* 主要內容 */
+    main {
+        padding: 40px;
+    }
+
+    /* 公車介紹標題 */
+    main h2 {
+        text-align: center;
+        color: #1565c0;
+        font-size: 32px;
+    }
+
+    /* 公車卡片排列 */
+    .bus-container {
+        display: flex;
+        gap: 30px;
+    }
+
+    /* 公車卡片 */
+    .bus-card {
+        background-color: #f0f7ff;
+        padding: 25px;
+        border-radius: 12px;
+    }
+</style>
+</head>
+<body>
+
+<!-- 網站標題 -->
+<div class="header">
+    <h1>小庭高雄公車查詢系統</h1>
+</div>
+
+
+<!-- 網站主要內容 -->
+<main>
+    <h2>高雄公車介紹</h2>
+
+    <div class="bus-container">
+
+    <!-- 一般公車 -->
+    <div class="bus-card">
+        <h3>🚍 一般公車</h3>
+        <p>
+            一般公車的班次是固定的，也是高雄市常見的公共運輸方式，
+            提供市民通勤、就學及日常出行使用。
+        </p>
+    </div>
+
+    <!-- 公車式小黃 -->
+    <div class="bus-card">
+        <h3>🚕 公車式小黃</h3>
+        <p>
+            公車式小黃提供多元的搭乘服務，部分路線採預約方式，部分路線則提供固定班次，讓長者及行動不便者也能享有更加便利的大眾運輸服務。
+        </p>
+    </div>
+
+</div>
+
+
+<!-- 路線區域 -->
+<div class="route-area">
+
+    <div class="route-dynamic">
+        <h2>路線公車動態</h2>
+
+        <div class="route-item">🔴 紅28</div>
+        <div class="route-item">🟢 12</div>
+        <div class="route-item">🟡 69</div>
+    </div>
+
+    <div class="route-info">
+        <h2>路線介紹</h2>
+
+        <div class="route-search">
+            <input type="text" placeholder="請輸入路線名稱或編號">
+            <button>搜尋</button>
+        </div>
+    </div>
+
+</div>
+</main>
+</body>
+</html>

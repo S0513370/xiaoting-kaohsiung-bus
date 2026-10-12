@@ -1,0 +1,79 @@
+/* 整個網頁 */
+body {
+    margin: 0;
+    font-family: "Microsoft JhengHei", sans-serif;
+}
+
+/* 藍色標題列 */
+.header {
+    height: 90px;
+    background-color: #1976D2;
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 40px;
+}
+
+/* 網站名稱 */
+.header h1 {
+    color: white;
+    font-size: 28px;
+    margin: 0;
+    }
+    /* 路線區域 */
+.route-area {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+/* 左側路線公車動態 */
+.route-dynamic {
+    width: 35%;
+    background-color: #f0f7ff;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+/* 右側路線介紹 */
+.route-info {
+    width: 65%;
+}
+
+/* 路線標題 */
+.route-dynamic h2,
+.route-info h2 {
+    color: #1565c0;
+    font-size: 28px;
+}
+
+/* 路線列表 */
+.route-item {
+    padding: 15px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* 搜尋區 */
+.route-search {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+/* 搜尋輸入框 */
+.route-search input {
+    width: 300px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* 搜尋按鈕 */
+.route-search button {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
